@@ -1,18 +1,11 @@
 <mat-toolbar>
   <div class="menu">
-    <mat-chip>Menu 1</mat-chip>
+    <mat-chip >Menu 1</mat-chip>
     <mat-chip>Menu 2</mat-chip>
     <mat-chip>Menu 2</mat-chip>
     <mat-chip>Menu 2</mat-chip>
-  </div><div *ngIf="plant">
-    <h2>{{ plant.common_name }}</h2>
-    <p><strong>Scientific Name:</strong> {{ plant.scientific_name }}</p>
-    <p><strong>Family:</strong> {{ plant.family }}</p>
-    <img *ngIf="plant.image_url" [src]="plant.image_url" alt="{{ plant.common_name }}">
-  </div>
-  
-  <div *ngIf="errorMessage">
-    <p class="error">{{ errorMessage }}</p>
   </div>
   
 </mat-toolbar>
+
+<app-harry-potter></app-harry-potter>
